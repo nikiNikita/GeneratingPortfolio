@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UpdatingProfile</title>
+    <link rel="stylesheet" href="../../assets/css/UpdateForm.css">
+</head>
+<body onload="updateSetupChange()">
+
+    <header>
+
+       <div id="afterLogIn" class="headerClass">
+         <h4>update Profile</h4>
+         <ul class="blocksInline">
+                <li><a href="#" onclick="javascript:updateSkills()">SKILLS</a></li>
+
+                <li><a href="#" onclick="javascript:updateWork()">WORK</a></li> 
+        </ul>
+
+       </div>
+
+    </header>
+
+    <div id="pageContent">
+
+        <div id="afterLoginContent" class="contentClass">
+            <div id="addSkill">
+                <div id="menuOptionSkill">
+                     <!--<button id="viewSkill" onclick="selectSkill()" >Select skill to update</button> -->
+                     <select id="viewSkillselect" onchange="viewSkill()">
+                         <option>select to view</option>
+                     </select>
+
+                  
+                     <select id="deleteSkill" onchange="delSkill()" >
+                         <option>select Skill delete</option>
+                    </select>
+
+                    <button id="skilladdingButton" onclick="EmptyArea()">Add more Skills</button>
+                </div>
+                <div id="workAreaSkill">
+                   <div id="modificationArea" style="display:none">
+                        <input type="text" id="keyInput">
+                        <textarea id="keyinputDec"></textarea>
+                        <button id="AddBut" onclick="addSkillFunction()">ADD</button>
+                   </div>
+                   <div id="displaySkill" style="display:none">
+                       <h3 id="skillNameDis"></h3>
+                       <br>
+                       <p id="skillDecDis"></p>
+                   </div>
+                   <div id="deleteSkillConfirmation" style="display:none">
+                        <h3 id="skillNameDel"></h3>
+                        <br>
+                        <p id="skillDecDel"></p>
+
+                        <button id="deleteElement" onclick="delSelectedElement()">press to delete</button>
+                   </div>
+
+                </div>
+
+            </div>
+            
+            <div id="addWork">
+                <div id="menuOptionWork">
+                    <!--<button id="viewSkill" onclick="selectSkill()" >Select skill to update</button> -->
+                    <select id="viewWorkselect" onchange="viewWork()">
+                        <option>select to view</option>
+                    </select>
+
+                 
+                    <select id="deleteWork" onchange="delWork()" >
+                        <option>select Skill delete</option>
+                   </select>
+
+                   <button id="workAddingButton" onclick="EmptyAreaWork()">Add more Skills</button>
+               </div>
+               <div id="workAreaWork">
+                  <div id="modificationAreaWork" style="display:none">
+                       <input type="text" id="keyInputWork">
+                       <textarea id="keyinputDecWork"></textarea>
+                       <button id="AddButWork" onclick="addWorkFunction()">ADD</button>
+                  </div>
+                  <div id="displayWork" style="display:none">
+                      <h3 id="workNameDis"></h3>
+                      <br>
+                      <p id="workDecDis"></p>
+                  </div>
+                  <div id="deleteWorkConfirmation" style="display:none">
+                       <h3 id="workNameDel"></h3>
+                       <br>
+                       <p id="workDecDel"></p>
+
+                       <button id="deleteElementWork" onclick="delSelectedElementWork()">press to delete</button>
+                  </div>
+
+               </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="../../assets/js/updateForm.js"></script>
+    
+</body>
+</html>

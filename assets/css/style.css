@@ -1,0 +1,119 @@
+/* media queries */
+@media only screen and (max-width: 768px){
+  .alignMiddle{
+    text-align : center;
+    top : 25%;
+    left : 35%;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  .alignMiddle{
+    text-align : center;
+    top : 25%;
+    left : 35%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px){
+  .alignMiddle{
+    text-align : center;
+    top : 25%;
+    left : 35%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+body{
+  margin: 0px;
+  height: 100vh;
+}
+
+section{
+  margin : 0;
+  border : 0;
+  background-color : black;
+  width : 100%;
+  height : 95vh; 
+  display : inline-block;
+}
+/*
+header{
+  margin : 0px;
+  border : 0px;
+
+  width : 100%;
+  height : 50%;
+}
+*/
+
+
+#homePage{
+
+ 
+
+}
+
+
+
+#main{
+  background-color: gray;
+}
+
+#menuDropDown{
+  display : none;
+  margin : 0;
+
+  border :0;
+  padding : 0;
+  height : 100vh;
+  text-align: center;
+  font-size : 50px;
+  justify-content: center;
+  background : black ;
+  opacity: 0.5;
+
+}
+
+#menuDropDown +a{
+
+  top : 25%;
+}
+
+#menuDropDown a{
+  position : relative;
+  margin-left : auto;
+  margin-right : auto;
+  text-decoration: none;
+  color : gray;
+}
+
+#menuDropDown a:hover{
+  color : red;
+}
+
+.rightButtonsFloat{
+  float: right;
+  top : 50%;
+}
+
+
+.leftButtonsFloat{
+  float : left;
+  top : 50%;
+}
+
+#msg{
+  color :white;
+}

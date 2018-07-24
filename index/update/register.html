@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>u have entered registration</p>
+<form onsubmit="registrationProcess()" action="#">
+    <input type="text" id="userName" placeholder="username" >
+    <input type="text" id="userEmail" placeholder="email Id">
+    <input type="password" id="userPassword" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="mush contain uppercase lowercase and number">
+    <input type="password" id="confirmPassword" placeholder="confirm password">
+    <p id="errorMsg"></p>
+    <input type="submit" value="signUp">
+    
+
+
+</form>
+<script type="text/javascript" src="../../assets/js/updateForm.js"></script>
+</body>
+</html>

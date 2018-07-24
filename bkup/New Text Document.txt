@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UpdatingProfile</title>
+    <link rel="stylesheet" href="../assets/css/UpdateForm.css">
+</head>
+<body onload="updateSetup()">
+
+    <header>
+       <div id="logInHeader" class="headerClass">
+         <ul class="blocksInline">
+            <li><p>Username</p><input type="text" id="userId" placeholder="user name"></li>
+            <li><p>Password</p><input type="password" id="password" placeholder="password"></li> 
+         </ul>
+         
+        <ul class="blocksInline">
+            <li><button id="loginButton" onclick="loginUser()">login</button></li>
+            <li><button id="registerUser" onclick="openRegForm()">Register</button></li>
+        </ul>
+       </div>
+
+       <div id="afterLogIn" class="headerClass">
+         <h4>update Profile</h4>
+         <ul class="blocksInline">
+                <li><a href="#" onclick="javascript:updateSkills()">SKILLS</a></li>
+
+                <li><a href="#" onclick="javascript:updateWork()">WORK</a></li> 
+             </ul>
+
+       </div>
+
+    </header>
+
+    <div id="pageContent">
+        
+        <div id="logInContent" class="contentClass">
+
+
+        </div>
+
+        <div id="afterLoginContent" class="contentClass">
+            <div id="addSkill">
+                <div id="menuOption">
+                     <!--<button id="viewSkill" onclick="selectSkill()" >Select skill to update</button> -->
+                     <select id="viewSkillselect">
+                         <option>select to view</option>
+                     </select>
+                     <button id="skilladdingButton" onclick="EmptyArea()">Add more Skills</button>
+                  
+                     <select id="deleteSkill" onchange="viewSkill()" >
+                         <option>select Skill delete</option>
+                    </select>
+                </div>
+                <div id="modificationArea">
+                   <input type="text" id="keyInput">
+                   <textarea id="keyinputDec"></textarea>
+                   <button id="confm" >update</button>
+                   <button id="AddBut" onclick="addSkillFunction()">ADD</button>
+                </div>
+            </div>
+            
+            <div id="addWork">
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script type="text/javascript" src="../assets/js/updateForm.js"></script>
+    
+</body>
+</html>

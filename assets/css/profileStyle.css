@@ -1,0 +1,89 @@
+div{
+    display: inline-block;
+}
+
+header{
+    position:sticky;
+    top:0;
+}
+section{
+    position : relativee;
+    
+   /* scroll-behavior :smooth;
+    overflow-y :scroll;*/
+}
+li{
+    display : inline;
+}
+
+#socialIcon{
+    float : right;
+}
+
+#socialIcon li{
+    padding : 5px 2px 3px 2px;
+}
+
+#socialIcon a{
+  text-decoration : none;
+
+}
+
+#socialIcon li:nth-last-child(1){
+    margin-right: 40px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: gray;
+    border-radius: 50%;
+}
+
+.fa-facebook:hover{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter:hover{
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram:hover{
+    background: rgb(199, 40, 138);
+    color: white;
+}
+
+.fa-linkedin:hover{
+    background: rgb(21, 60, 189);
+    color: white;
+
+}
+
+#socialInfo{
+    margin : 0px;
+    border:0px;
+    background-color : black;
+    height : 100px;
+    width: 100%;
+}
+
+#infoBar{
+    width:100%;
+    margin:0px;
+    border: 0px;
+    background-color:rgb(159, 161, 160);
+    text-align: center;
+}
+
+#skillList li{
+   margin : 5px;
+   padding: 5px;
+   border : 2px solid palevioletred;
+   color : red;
+}
